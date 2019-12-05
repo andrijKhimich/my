@@ -1,0 +1,37 @@
+.header {
+  position: absolute;
+  background-color: transparent;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+
+  &-row {
+    padding: 0 30px;
+  }
+}
+
+.logo {
+  font-family: 'Abril Fatface', cursive;
+  font-size: 100px;
+  text-transform: uppercase;
+  color: $white;
+  line-height: 0.8em;
+  text-align: center;
+  font-size: 26px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 59px;
+  flex-wrap: wrap;
+  position: relative;
+
+  &-point {
+    position: relative;
+    top: 3px;
+    left: 5%;
+    transform: translate(-50%, -50%);
+    display: inline-block;
+  }
+}

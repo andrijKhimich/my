@@ -1,0 +1,29 @@
+@import 'abstracts/mixins';
+
+// libs using in project, uncoment what you need
+@import '../libs/bootstrap/css/grid.css';
+// @import '../libs/slick_1.9.0/slick/slick.scss';
+// @import '../libs/fancybox/dist/jquery.fancybox.min.css';
+// @import '../libs/roundSlider/roundslider.min.css';
+// @import '../libs/slick_1.9.0/slick/slick-theme.scss';
+// @import '../libs/odometer/themes/odometer-theme-default.css';
+// @import '../libs/select2/dist/css/select2.min.css';
+// @import "../libs/bootstrap/scss/bootstrap.scss";
+// @import '../libs/jquery-ui-1.12.1.custom/jquery-ui.min.css';
+
+// base styles for project
+@import 'base/fonts';
+@import 'base/base';
+@import 'base/animations';
+@import 'base/sprite-svg';
+
+// project components
+@import 'components/header';
+@import 'components/footer';
+@import "components/humburger";
+@import "components/section-home";
+// @import "components/sidebar";
+@import "components/modal";
+
+// project pages
+@import 'pages/index';

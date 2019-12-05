@@ -1,0 +1,27 @@
+// classes for animation
+.js-show {
+  transform: translate(0, 0) rotate(0);
+  opacity: 1;
+  transition: transform .8s cubic-bezier(0.6, 0, 0.41, 1), opacity .8s cubic-bezier(0.6, 0, 0.41, 1);
+}
+
+.js-fadeIn {
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.js-slideRight {
+  opacity: 0;
+  transform: translate(50px, 0);
+}
+
+.js-slideLeft {
+  opacity: 0;
+  transform: translate(-50px, 0);
+}
+
+.js-show-onload {
+  transform: translate(0, 0) rotate(0);
+  opacity: 1;
+  transition: transform .8s cubic-bezier(0.6, 0, 0.41, 1), opacity .8s cubic-bezier(0.6, 0, 0.41, 1);
+}
