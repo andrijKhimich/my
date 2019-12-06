@@ -1,6 +1,9 @@
 // project fonts
-$font-primary: 'AmesRoman',cursive, sans-serif;
-$font-secondary: 'Poppins', sans-serif;
+$font-primary: 'AmesRoman',
+cursive,
+sans-serif;
+$font-secondary: 'Poppins',
+sans-serif;
 
 // project colors
 $white: #ffffff;
@@ -407,28 +410,31 @@ input {
   max-width: 1140px;
   margin: 0 auto;
   padding: 0 15px;
+
   &_lg {
     max-width: 1295px;
     padding: 0 15px;
     margin: 0 auto;
     position: relative;
     z-index: 1;
+    height: 100%;
+
     @include d(1300) {
       max-width: 95%;
       padding: 0;
     }
-  
+
     // @include d(991) {
     //   max-width: 910px;
-  
+
     // }
     // @include d(767) {
     //   max-width: 100%;
-  
+
     // }
     // @include d(575) {
     //   max-width: 100%;
-  
+
     // }
   }
 }

@@ -3,11 +3,13 @@
     display: inline-block;
     width: 20px;
     height: 20px;
-    fill: $white;
-    transition: fill $duration;
+    stroke: $gray;
+    transition: stroke $duration;
+    fill: transparent;
+
     @include rh(1024) {
       &:hover {
-        fill:$red;
+        stroke: $red;
       }
     }
   }

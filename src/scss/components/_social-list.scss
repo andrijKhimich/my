@@ -1,13 +1,15 @@
 .social {
   &-list {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
     display: flex;
     justify-content: space-around;
+    flex-direction: column;
     align-items: center;
   }
+
   &-item {
-    padding: 15px;
+    padding: 5px;
   }
 }
