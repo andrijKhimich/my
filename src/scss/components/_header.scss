@@ -13,25 +13,30 @@
 }
 
 .logo {
-  font-family: 'Abril Fatface', cursive;
-  font-size: 100px;
-  text-transform: uppercase;
-  color: $white;
+  font-family: $font-primary;
+  font-weight: 400;
+  font-size: 80px;
   line-height: 0.8em;
-  text-align: center;
-  font-size: 26px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 59px;
-  flex-wrap: wrap;
-  position: relative;
+  margin: 50px 0;
 
-  &-point {
+  span {
     position: relative;
-    top: 3px;
-    left: 5%;
-    transform: translate(-50%, -50%);
-    display: inline-block;
+    font-weight: 400;
+    &:first-child {  
+      color: $gray;
+      // mix-blend-mode: overlay;
+      -webkit-text-stroke: 1px $gray;
+      -webkit-text-fill-color: $red;
+      display: inline-block;
+      z-index: 10;
+    }
+    &:last-child {  
+      // z-index: -1;
+      margin-left: -.62em;
+      color: $gray;
+      // mix-blend-mode: overlay;
+      -webkit-text-stroke: 1px $gray;
+      -webkit-text-fill-color: $gray;
+    }
   }
 }

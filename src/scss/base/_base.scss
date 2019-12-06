@@ -1,24 +1,13 @@
 // project fonts
-$font-primary: 'Muli-Regular',
-'Arial',
-'Helvetica',
-sans-serif;
-$font-primary-semibold: 'Muli-SemiBold',
-'Arial',
-'Helvetica',
-sans-serif;
-$font-primary-bold: 'Muli-Bold',
-'Arial',
-'Helvetica',
-sans-serif;
-
+$font-primary: 'AmesRoman',cursive, sans-serif;
+$font-secondary: 'Poppins', sans-serif;
 
 // project colors
 $white: #ffffff;
 $gray: #e9e9e9;
 $black: #1d1e1f;
 $yellow: #fed566;
-
+$red: #C71413;
 
 $duration: .3s;
 $animationDuration: .6s;
@@ -300,12 +289,8 @@ p,
 li {
   line-height: 1.5em;
   margin: 0;
-  font-size: 14px;
-  font-family: $font-primary;
-}
-
-p {
-  font-family: $font-primary;
+  font-size: 18px;
+  font-family: $font-secondary;
 }
 
 ul,
@@ -443,7 +428,6 @@ main {
   font-size: 50px;
   line-height: 1.14em;
   margin-bottom: 9px;
-  font-family: $font-primary-semibold;
   letter-spacing: 1px;
 }
 
@@ -488,23 +472,12 @@ main {
 
 
 .subtitle {
-  font-family: $font-primary-bold;
+  font-family: $font-primary;
   font-size: 22px;
   line-height: 0.909em;
   text-transform: uppercase;
 }
 
-.article_white {
-  color: $black;
-
-  p:first-child {
-    font-family: $font-primary-bold;
-  }
-
-  p:not(:last-child) {
-    margin-bottom: 25px;
-  }
-}
 
 .hide-on-mob {
   display: inline-block;
