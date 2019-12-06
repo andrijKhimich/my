@@ -1,15 +1,14 @@
 .svg {
   &-icon {
     display: inline-block;
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
     fill: $white;
-  }
-  &-social {
-    display: inline-block;
-    width: 24px;
-    height: 24px;
-    fill: $white;
-    transition: fill $duration $timing;
+    transition: fill $duration;
+    @include rh(1024) {
+      &:hover {
+        fill:$red;
+      }
+    }
   }
 }

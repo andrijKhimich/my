@@ -6,35 +6,35 @@
   left: 0;
   right: 0;
   z-index: 1;
-
+  padding: 20px 0;
   &-row {
     padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 }
 
 .logo {
   font-family: $font-primary;
   font-weight: 400;
-  font-size: 80px;
+  font-size: 40px;
   line-height: 0.8em;
-  margin: 50px 0;
+  margin: 0;
 
   span {
     position: relative;
     font-weight: 400;
     &:first-child {  
       color: $gray;
-      // mix-blend-mode: overlay;
       -webkit-text-stroke: 1px $gray;
       -webkit-text-fill-color: $red;
       display: inline-block;
       z-index: 10;
     }
     &:last-child {  
-      // z-index: -1;
       margin-left: -.62em;
       color: $gray;
-      // mix-blend-mode: overlay;
       -webkit-text-stroke: 1px $gray;
       -webkit-text-fill-color: $gray;
     }
