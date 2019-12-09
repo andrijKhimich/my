@@ -9,7 +9,7 @@ sans-serif;
 $white: #ffffff;
 $gray: #e9e9e9;
 $black: #1d1e1f;
-$yellow: #fed566;
+$yellow: #E0B785;
 $red: #C71413;
 
 $duration: .3s;
@@ -325,6 +325,12 @@ blockquote {
 }
 
 button {
+  background-color: transparent;
+  border: none;
+  color: $gray;
+
+  font-family: $font-secondary;
+
   &:hover {
     cursor: pointer;
   }
@@ -412,30 +418,16 @@ input {
   padding: 0 15px;
 
   &_lg {
-    max-width: 1295px;
+    max-width: 1440px;
     padding: 0 15px;
     margin: 0 auto;
     position: relative;
     z-index: 1;
-    height: 100%;
 
     @include d(1300) {
       max-width: 95%;
       padding: 0;
     }
-
-    // @include d(991) {
-    //   max-width: 910px;
-
-    // }
-    // @include d(767) {
-    //   max-width: 100%;
-
-    // }
-    // @include d(575) {
-    //   max-width: 100%;
-
-    // }
   }
 }
 
@@ -450,20 +442,19 @@ main {
   overflow: hidden;
 }
 
-
 // project typography
 .title-1 {
   @extend h1;
   text-transform: uppercase;
-  font-size: 50px;
-  line-height: 1.14em;
-  margin-bottom: 9px;
+  font-size: 100px;
+  line-height: .8em;
   letter-spacing: 1px;
+  color: $gray;
 }
 
 .title-2 {
   @extend h2;
-  font-size: 40px;
+  font-size: 90px;
   line-height: 1.125em;
 }
 

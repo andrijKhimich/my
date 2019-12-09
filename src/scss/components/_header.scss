@@ -5,9 +5,8 @@
   top: 0;
   left: 0;
   right: 0;
-  z-index: 1;
-  padding: 20px 0;
-  height: 100vh;
+  z-index: 10;
+  padding: 30px 0;
 
   &-row {
     padding: 0 30px;
@@ -20,9 +19,10 @@
 .logo {
   font-family: $font-primary;
   font-weight: 400;
-  font-size: 40px;
+  font-size: 60px;
   line-height: 0.8em;
   margin: 0;
+  cursor: pointer;
 
   span {
     position: relative;
@@ -31,7 +31,7 @@
     &:first-child {
       color: $gray;
       -webkit-text-stroke: 1px $gray;
-      -webkit-text-fill-color: $red;
+      -webkit-text-fill-color: $yellow;
       display: inline-block;
       z-index: 10;
     }
@@ -40,7 +40,7 @@
       margin-left: -.62em;
       color: $gray;
       -webkit-text-stroke: 1px $gray;
-      -webkit-text-fill-color: $gray;
+      // -webkit-text-fill-color: $gray;
     }
   }
 }
