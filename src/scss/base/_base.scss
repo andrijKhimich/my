@@ -295,6 +295,7 @@ li {
   margin: 0;
   font-size: 18px;
   font-family: $font-secondary;
+  color: $black;
 }
 
 ul,
@@ -514,5 +515,16 @@ main {
 
   @include m(575) {
     display: none;
+  }
+}
+.word {
+  position: absolute;
+  bottom: 0;
+  right: 50px;
+  opacity: .05;
+  p {
+    font-size: 360px;
+    font-weight: 700;
+    line-height: 1em;
   }
 }
