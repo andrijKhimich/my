@@ -25,3 +25,12 @@
   opacity: 1;
   transition: transform .8s cubic-bezier(0.6, 0, 0.41, 1), opacity .8s cubic-bezier(0.6, 0, 0.41, 1);
 }
+
+@keyframes bg-animation {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}
