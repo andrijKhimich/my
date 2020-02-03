@@ -484,6 +484,7 @@ main {
 
 //project buttons
 .button {
+  position: relative;
   display: inline-block;
   font-size: 14px;
   font-family: $font-secondary;
@@ -496,11 +497,23 @@ main {
   cursor: pointer;
   border: 1px solid transparent;
   text-align: left;
+
   &_primary {
     background-color: transparent;
-    transition: color $timing $duration;
-    &:focus, &:hover {
+    transition: color $timing $duration, box-shadow $timing $duration;
+
+    &:focus,
+    &:hover {
       color: $yellow;
+    }
+    span {
+      margin-right: 20px;
+    }
+    .svg-icon {
+      position: absolute;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      transition: margin-left $timing $duration, fill $timing $duration;
     }
   }
 }
@@ -529,11 +542,13 @@ main {
     display: none;
   }
 }
+
 .word {
   position: absolute;
   bottom: 0;
   right: 50px;
   opacity: .05;
+
   p {
     font-size: 360px;
     font-weight: 700;
@@ -545,6 +560,7 @@ main {
   &-container {
     position: relative;
     display: block;
+
     &:not(:last-child) {
       margin-bottom: 20px;
     }
@@ -562,9 +578,11 @@ main {
     background-color: transparent;
     transition: border $timing $duration;
     color: $yellow;
+
     &:focus,
     &:valid {
       border-bottom: 1px solid $yellow;
+
       &~.input-label {
         font-size: 10px;
         top: -8px;
