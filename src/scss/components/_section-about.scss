@@ -1,5 +1,4 @@
 .section-about {
-  height: 100vh;
   background: $gray;
   padding: 180px 0;
 
@@ -10,10 +9,6 @@
     span {
       background-color: $black;
     }
-  }
-
-  .container_lg {
-    height: 100%;
   }
 
   .title-2 {
@@ -35,7 +30,6 @@
   p {
     text-align: justify;
   }
-
 }
 
 .about {

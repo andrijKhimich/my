@@ -316,6 +316,10 @@ ol {
 section.section {
   position: relative;
   overflow: hidden;
+  height: 100vh;
+  .container_lg {
+    height: 100%;
+  }
 }
 
 tr {
@@ -515,6 +519,14 @@ main {
       transform: translate(-50%, -50%);
       transition: margin-left $timing $duration, fill $timing $duration;
     }
+  }
+  &_sm {
+    min-width: 120px;
+    text-align: center;
+    color: $gray;
+    border: 2px solid $gray;
+    height: 50px;
+    line-height: 46px;
   }
 }
 
