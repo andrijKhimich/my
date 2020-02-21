@@ -319,6 +319,9 @@ li {
   font-size: 18px;
   font-family: $font-secondary;
   color: $black;
+  @include d(768) {
+    font-size: 16px;
+  }
 }
 
 ul,
@@ -457,6 +460,10 @@ input {
       max-width: 95%;
       padding: 0;
     }
+    @include d(767) {
+      max-width: 100%;
+      padding: 0 30px;
+    }
   }
 }
 
@@ -480,6 +487,15 @@ main {
   @extend h2;
   font-size: 90px;
   line-height: 1.125em;
+  @include d(1399) {
+    font-size: 80px;
+  }
+  @include d(991) {
+    font-size: 60px;
+  }
+  @include d(575) {
+    font-size: 54px;
+  }
 }
 
 .title-3 {
@@ -515,7 +531,9 @@ main {
   cursor: pointer;
   border: 1px solid transparent;
   text-align: left;
-
+  @include d(575) {
+    min-width: 200px;
+  }
   &_primary {
     background-color: transparent;
     transition: color $timing $duration, box-shadow $timing $duration;
