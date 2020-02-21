@@ -55,8 +55,27 @@ h6 {
 }
 
 h1 {
-  line-height: 1em;
   font-family: $font-primary;
+  text-transform: uppercase;
+  font-size: 100px;
+  line-height: .8em;
+  letter-spacing: 1px;
+  color: $gray;
+  @include d(1299) {
+    font-size: 90px;
+  }
+  @include d(1199) {
+    font-size: 80px;
+  }
+  @include d(768) {
+    font-size: 70px;
+  }
+  @include d(575) {
+    font-size: 60px;
+  }
+  @include d(340) {
+    font-size: 50px;
+  }
 }
 
 h2 {
@@ -316,7 +335,8 @@ ol {
 section.section {
   position: relative;
   overflow: hidden;
-  height: 100vh;
+  // height: 100vh;
+  // height: 100%;
   .container_lg {
     height: 100%;
   }
@@ -338,7 +358,6 @@ button {
   background-color: transparent;
   border: none;
   color: $gray;
-
   font-family: $font-secondary;
 
   &:hover {
@@ -455,11 +474,6 @@ main {
 // project typography
 .title-1 {
   @extend h1;
-  text-transform: uppercase;
-  font-size: 100px;
-  line-height: .8em;
-  letter-spacing: 1px;
-  color: $gray;
 }
 
 .title-2 {
@@ -565,6 +579,9 @@ main {
     font-size: 360px;
     font-weight: 700;
     line-height: 1em;
+    @include d(1199) {
+      font-size: 260px;
+    }
   }
 }
 

@@ -1,11 +1,17 @@
 .section-about {
   background: $gray;
   padding: 180px 0;
-
+  @include d(768) {
+    padding: 100px 0;
+  }
   .abstract-lines {
     top: 0;
     left: 0;
-
+    @include d(768) {
+      right: 0;
+      left: auto;
+      top: 20px;
+    }
     span {
       background-color: $black;
     }
@@ -24,11 +30,22 @@
       bottom: -20px;
       left: 95%;
       background-color: $black;
+      @include d(991) {
+        bottom: 0;
+      }
     }
   }
 
   p {
     text-align: justify;
+  }
+  .word {
+    @include d(991) {
+      right: -100px;
+    }
+    @include d(768) {
+      right: -300px;
+    }
   }
 }
 
@@ -38,19 +55,39 @@
     justify-content: space-between;
     align-items: center;
     height: 100%;
+    @include d(768) {
+      flex-direction: column-reverse;
+      justify-content: center;
+    }
   }
 
   &-img {
     width: 40%;
-    border-radius: 50%;
+    @include d(767) {
+      border-radius: 50%;
+      overflow: hidden;
+      margin-bottom: 40px;
+      width: 60%;
+    }
+    @include d(575) {
+      width: 90%;
+    }
   }
 
   &-content {
     width: 60%;
     padding-right: 60px;
+    @include d(768) {
+      width: 90%;
+      margin: 0 auto;
+      padding-right: 0;
+    }
   }
 }
 
 .section-title {
   margin-bottom: 60px;
+  @include d(991) {
+    margin-bottom: 30px;
+  }
 }

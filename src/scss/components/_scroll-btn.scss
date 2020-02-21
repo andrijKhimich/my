@@ -9,7 +9,10 @@
   cursor: pointer;
   width: 100%;
   max-width: 140px;
-
+  @include d(768) {
+    right: -20px;
+    font-size: 10px;
+  }
   @include rh (1024) {
     &:hover {
       color: $yellow;

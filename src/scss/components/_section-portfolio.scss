@@ -1,7 +1,10 @@
 .section-portfolio {
   background-color: $white;
   color: $black;
-
+  padding: 180px 0;
+  @include d(768) {
+    padding: 100px 0;
+  }
   .word {
     left: 0;
     bottom: 0;
@@ -39,7 +42,6 @@
   height: 560px;
 
   &-row {
-    padding-top: 140px;
     max-width: 1200px;
     margin: 0 auto 0 0;
   }
