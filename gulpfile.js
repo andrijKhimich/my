@@ -82,13 +82,13 @@ gulp.task('js', function () {
       // path + 'libs/drag-swipe-scroll/jquery.dragscroll.min.js',
       // path + 'libs/bootstrap/dist/js/bootstrap.bundle.min.js',
       // path + 'libs/bootstrap/dist/js/bootstrap.min.js',
-      path + 'libs/slick_1.9.0/slick/slick.min.js',
+      // path + 'libs/slick_1.9.0/slick/slick.min.js',
       // path + 'libs/TweenMax.min.js',
       // path + 'libs/jquery-parallax.js',
       // path + 'libs/sharer/sharer.min.js',
       // path + 'libs/odometer/odometer.min.js',
       // path + 'libs/select2/dist/js/select2.full.js',
-      path + 'libs/svg4everybody_2.1.9/svg4everybody.js'
+      // path + 'libs/svg4everybody_2.1.9/svg4everybody.js'
       // path + 'libs/fancybox/dist/jquery.fancybox.js',
       // path + 'libs/roundSlider/roundslider.min.js'
       // path + 'libs/sharer/sharer.min.js'

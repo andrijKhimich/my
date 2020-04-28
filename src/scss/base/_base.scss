@@ -44,6 +44,27 @@ body {
   text-rendering: geometricPrecision;
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #444;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #666;
+  border-radius: 3px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
 h1,
 h2,
 h3,
@@ -61,18 +82,23 @@ h1 {
   line-height: .8em;
   letter-spacing: 1px;
   color: $gray;
+
   @include d(1299) {
     font-size: 90px;
   }
+
   @include d(1199) {
     font-size: 80px;
   }
+
   @include d(768) {
     font-size: 70px;
   }
+
   @include d(575) {
     font-size: 60px;
   }
+
   @include d(340) {
     font-size: 50px;
   }
@@ -319,6 +345,7 @@ li {
   font-size: 18px;
   font-family: $font-secondary;
   color: $black;
+
   @include d(768) {
     font-size: 16px;
   }
@@ -338,6 +365,7 @@ ol {
 section.section {
   position: relative;
   overflow: hidden;
+
   // height: 100vh;
   // height: 100%;
   .container_lg {
@@ -460,6 +488,7 @@ input {
       max-width: 95%;
       padding: 0;
     }
+
     @include d(767) {
       max-width: 100%;
       padding: 0 30px;
@@ -487,12 +516,15 @@ main {
   @extend h2;
   font-size: 90px;
   line-height: 1.125em;
+
   @include d(1399) {
     font-size: 80px;
   }
+
   @include d(991) {
     font-size: 60px;
   }
+
   @include d(575) {
     font-size: 54px;
   }
@@ -531,9 +563,11 @@ main {
   cursor: pointer;
   border: 1px solid transparent;
   text-align: left;
+
   @include d(575) {
     min-width: 200px;
   }
+
   &_primary {
     background-color: transparent;
     transition: color $timing $duration, box-shadow $timing $duration;
@@ -542,9 +576,11 @@ main {
     &:hover {
       color: $yellow;
     }
+
     span {
       margin-right: 20px;
     }
+
     .svg-icon {
       position: absolute;
       top: 50%;
@@ -552,6 +588,7 @@ main {
       transition: margin-left $timing $duration, fill $timing $duration;
     }
   }
+
   &_sm {
     min-width: 120px;
     text-align: center;
@@ -597,6 +634,7 @@ main {
     font-size: 360px;
     font-weight: 700;
     line-height: 1em;
+
     @include d(1199) {
       font-size: 260px;
     }
