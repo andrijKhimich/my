@@ -31,7 +31,7 @@ html {
 body {
   margin: 0; // Remove the margin in all browsers.
   font-size: 16px;
-  font-family: $font-primary;
+  font-family: $font-secondary;
   color: $white;
   -webkit-font-smoothing: antialiased;
   -webkit-backface-visibility: hidden;
@@ -73,10 +73,10 @@ h5,
 h6 {
   margin: 0;
   font-weight: normal;
+  font-family: $font-primary;
 }
 
 h1 {
-  font-family: $font-primary;
   text-transform: uppercase;
   font-size: 100px;
   line-height: .8em;
@@ -106,12 +106,10 @@ h1 {
 
 h2 {
   line-height: 1em;
-  font-family: $font-primary;
 }
 
 h3 {
   line-height: 1em;
-  font-family: $font-primary;
 }
 
 h4 {
@@ -127,7 +125,7 @@ h5 {
 h6 {
   font-size: 16px;
   line-height: 1em;
-  font-family: $font-primary;
+
 }
 
 hr {
@@ -343,7 +341,6 @@ li {
   line-height: 1.5em;
   margin: 0;
   font-size: 18px;
-  font-family: $font-secondary;
   color: $black;
 
   @include d(768) {
@@ -389,7 +386,6 @@ button {
   background-color: transparent;
   border: none;
   color: $gray;
-  font-family: $font-secondary;
 
   &:hover {
     cursor: pointer;
@@ -468,8 +464,6 @@ input {
 .main-wrapper {
   position: relative;
   overflow: hidden;
-  max-width: 2000px;
-  margin: 0 auto;
 }
 
 .container {
@@ -553,7 +547,7 @@ main {
   position: relative;
   display: inline-block;
   font-size: 14px;
-  font-family: $font-secondary;
+
   height: 60px;
   line-height: 58px;
   min-width: 309px;
@@ -658,7 +652,6 @@ main {
     height: 50px;
     line-height: 50px;
     font-size: 14px;
-    font-family: $font-secondary;
     letter-spacing: .06em;
     background-color: transparent;
     transition: border $timing $duration;
@@ -678,7 +671,6 @@ main {
 
   &-label {
     position: absolute;
-    font-family: $font-secondary;
     transition: color $timing $duration;
     left: 0;
     top: 15px;

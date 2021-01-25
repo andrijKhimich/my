@@ -1,0 +1,2 @@
+RewriteCond %{THE_REQUEST} \s/about\.html([^\s?/]+) [NC]
+RewriteRule ^ /about [R=302,L]

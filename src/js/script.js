@@ -1,21 +1,25 @@
-
-
 $(document).ready(function () {
-  $(window).scroll(function () {
-    var scroll = $(this).scrollTop();
-    $('.home-title__text').css({
-      'transform': 'translate(0%, ' + scroll / 5 + '%'
-    });
-    $('.social-list').css({
-      'transform': 'translate(0%, ' + scroll / -5 + '%'
-    });
-    // $('.social-list').css({
-    //   'transform': 'translate(0%, ' + scroll / 5 + '%'
-    // });
-  });
+  // const form = $('.form');
 
-  if ($(window).width() < 768) {
-    // some code
+  // form.on('submit', function () {
+  //   submitForm();
+  // });
+
+  function submitForm() {
+    //Do validation and submit form
+    $.ajax({
+      url: "../mail.php",
+      type: "POST",
+
+    }).done(function (data) {
+      alert(data);
+      if (data == 1) {
+        alert('Success');
+        window.location.href = '/';
+      } else {
+        alert('Failed');
+      }
+    });
+    return false;
   }
-
 });

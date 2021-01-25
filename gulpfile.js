@@ -13,8 +13,8 @@ let gulp = require('gulp'),
   cache = require('gulp-cache'),
   gcmq = require('gulp-group-css-media-queries'), // group css media
   svgSprite = require('gulp-svg-sprite'),
-  cheerio = require('gulp-cheerio'),
-  replace = require('gulp-replace');
+  cheerio = require('gulp-cheerio'),  
+	replace = require('gulp-replace');
 
 let path = 'src/';
 
@@ -92,6 +92,8 @@ gulp.task('js', function () {
       // path + 'libs/fancybox/dist/jquery.fancybox.js',
       // path + 'libs/roundSlider/roundslider.min.js'
       // path + 'libs/sharer/sharer.min.js'
+      path + 'js/script.js'
+
     ])
     .pipe(uglify())
     .pipe(sourcemaps.init())
@@ -167,7 +169,7 @@ gulp.task('default', gulp.parallel('watch', 'clear', 'html', 'sass', 'js', 'brow
 
 
 // only for building project
-gulp.task('removebuild', function () {
+gulp.task('removeBuild', function () {
   return del('dist');
 });
 
@@ -197,11 +199,9 @@ gulp.task('buildFonts', function () {
 });
 
 
-
-
-// gulp.task('buildSvg', function () {
-// return gulp.src(path + 'img/**/*').pipe(gulp.dest('dist/fonts/'));
-// });
+gulp.task('buildPhp', function () {
+  return gulp.src(path + '*.php').pipe(gulp.dest('dist/'));
+});
 
 // Build task
-gulp.task('build', gulp.series('removebuild', gulp.parallel('html', 'sass', 'js'), 'buildHtml', 'buildCss', 'buildScript', 'buildImg', 'buildFonts'));
+gulp.task('build', gulp.series('removeBuild', gulp.parallel('html', 'sass', 'js'), 'buildHtml', 'buildCss', 'buildScript', 'buildImg', 'buildFonts', 'buildPhp'));
